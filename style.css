@@ -1,0 +1,70 @@
+.header {
+   background-image: url('https://www.theindiatourism.com/images/South-india-packages.jpg');
+padding: 150px;
+text-align: center;
+color: rgb(179, 243, 84);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+font-size: 80px;
+font-style:italic;
+background:linear-gradient(#8ee6a50%,#ebde24100%);
+font-weight:300;
+}
+*{
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+float: left;
+width: 30%;
+height: 300px; /* only for demonstration, should be removed */
+background: #8ee6a5;
+padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+article {
+float: left;
+padding: 20px;
+width: 70%;
+background-color: #11b940;
+height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the footer */
+footer {
+background-color: #ebde24;
+padding: 10px;
+font-size: 20px;
+text-align: center;
+color: indigo;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens 
+@media (max-width: 600px) {
+nav, article {
+width: 100%;
+height: auto;
+}
+
+}*/
